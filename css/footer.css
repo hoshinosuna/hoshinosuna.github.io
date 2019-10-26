@@ -204,6 +204,10 @@ nav ul {
     z-index: 1;
   }
 
+  .nav-footer .nav-link {
+    margin: 0;
+  }
+
   .nav-footer .nav-subtitle {
     margin-top: 3px;
   }
@@ -266,11 +270,11 @@ nav ul {
 
 /* ボタン全体 */
 .flowbtn10 {
-    display: inline-block;
-    font-size: 35px;
-    text-decoration: none;
-    transition: .5s;
-    color: #444;
+  display: inline-block;
+  font-size: 35px;
+  text-decoration: none;
+  transition: .5s;
+  color: #444;
 }
 
 /* インスタ・pocket・ラインだけ少し大きく */
@@ -278,69 +282,69 @@ nav ul {
 .flowbtn10 .fa-get-pocket,
 .flowbtn10 .fa-get-pocket,
 .flowbtn10 .fa-line {
-    font-size: 38px;
+  font-size: 38px;
 }
 
 /* Twitterマウスホバー時 */
 .flowbtn10 .fa-twitter:hover {
-    color: #55acee;
+  color: #55acee;
 }
 
 /* Instagramマウスホバー時 */
 .flowbtn10 .fa-instagram:hover {
-    color: #c6529a;
+  color: #c6529a;
 }
 
 /* Facebookマウスホバー時 */
 .flowbtn10 .fa-facebook-f:hover {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 /* Feedlyマウスホバー時 */
 .flowbtn10 .fa-rss:hover {
-    color: #6cc655;
+  color: #6cc655;
 }
 
 /* Pocketマウスホバー時 */
 .flowbtn10 .fa-get-pocket:hover {
-    color: #ef3f56;
+  color: #ef3f56;
 }
 
 /* はてブマウスホバー時 */
 .flowbtn10 .fa-bold:hover {
-    color: #1ba5dc;
+  color: #1ba5dc;
 }
 
 /* YouTubeマウスホバー時 */
 .flowbtn10 .fa-youtube:hover {
-    color: #fc0d1c;
+  color: #fc0d1c;
 }
 
 /* LINEマウスホバー時 */
 .flowbtn10 .fa-line:hover {
-    color: #00c300;
+  color: #00c300;
 }
 
 /* メールアイコンマウスホバー時 */
 .flowbtn10 .fa-envelope:hover {
-    color: #f3981d;
+  color: #f3981d;
 }
 
 /* ulタグの内側余白を０にする */
 ul.snsbtniti {
-    padding: 0 !important;
-    list-style-type: none !important;
+  padding: 0 !important;
+  list-style-type: none !important;
 }
 
 /* アイコン全体の位置 */
 .snsbtniti {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 /* アイコン同士の余白 */
 .snsbtniti li {
-    flex: 0 0 33%;
-    text-align: center !important;
+  flex: 0 0 33%;
+  text-align: center !important;
 }
