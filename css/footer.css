@@ -168,13 +168,13 @@ nav ul {
     width: 100%;
   }
 
-  .l-footer-container {
-    padding: 0;
-  }
-
   .l-container {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .l-footer-container {
+    padding: 0;
   }
 
   .l-container-narrow {
