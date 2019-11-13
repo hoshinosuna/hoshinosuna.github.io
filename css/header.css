@@ -82,6 +82,10 @@
   list-style: none;
 }
 
+ul.category {
+    padding-left:0px;
+}
+
 .category-title {
   padding: 0.5rem;
   /*background-color: #FFFFFF;*/
