@@ -1,52 +1,50 @@
 <script type="text/javascript">
-  $(function() {
-    $("#nav-open").on("click", function() {
-      if ($(this).hasClass("active")) {
-        $(this).removeClass("active");
-        $("#nav-content").removeClass("open").fadeOut(100);
-      } else {
-        $(this).addClass("active");
-        $("#nav-content").fadeIn(100).addClass("open");
-      }
+    $(function() {
+        $("#nav-open").on("click", function() {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $("#nav-content").removeClass("open").fadeOut(100);
+            } else {
+                $(this).addClass("active");
+                $("#nav-content").fadeIn(100).addClass("open");
+            }
+        });
     });
-  });
 </script>
 <div class="header-menu">
-  <a href="https://hoshi-no-suna.com/">
-    <div class="header-icon">
-      <img src="https://s3-ap-northeast-1.amazonaws.com/s3.peraichi.com/userData/5d730384-2260-439b-9faa-6db10a00002b/img/5db1adc93eee1/original-thumb.jpg">
+    <a href="https://hoshi-no-suna.com/">
+        <div class="header-icon">
+            <img src="https://hoshinosuna.github.io/image/top_icon.jpg" class="header-icon-image" />
+        </div>
+    </a>
+    <div id="nav-open">
+        <span></span>
     </div>
-  </a>
-  <div id="nav-open">
-    <span></span>
-  </div>
 
-</div>
-<ul>
-  <!--中身-->
-  <div id="nav-content">
-    <div class="hamburger-top"></div>
-    <ul class="category">
-      <li class="category-title"><a class="active" href="https://peraichi.com/landing_pages/view/hoshi-suna-space-about-us">
-          <font><b><i>About us</i><br>わたしたちについて</b></font>
-        </a></li>
-      <li class="category-title"><a href="https://peraichi.com/landing_pages/view/hoshi-suna-space-plan">
-          <font><b><i>Plan</i><br>プラン</b></font>
-        </a></li>
-      <li class="category-title"><a href="https://peraichi.com/landing_pages/view/hoshi-suna-space-access">
-          <font><b><i>Access</i><br>アクセス</b></font>
-        </a></li>
-      <li class="category-title-contact"><a href="https://forms.gle/WHcM1BjGQxP5WMAT9">
-          <font><b><i>Contact</i><br>お問い合わせ</b></font>
-        </a></li>
-    </ul>
-    <div class="nav-sns">
-      <div><a href="https://www.instagram.com/hoshi.suna.space/" class="flowbtn10"><i class="fab fa-facebook" style="color: #FFFFFF;"></i></a></div>
-      <div><a href="https://www.instagram.com/hoshi.suna.space/" class="flowbtn10"><i class="fab fa-instagram" style="color: #FFFFFF;"></i></a></div>
-      <div><a href="https://twitter.com/hoshinosuna1" class="flowbtn10"><i class="fab fa-twitter" style="color: #FFFFFF;"></i></a></div>
+    <!--中身-->
+    <div id="nav-content">
+        <div class="hamburger-top"></div>
+        <ul class="category">
+            <li class="category-title"><a class="active" href="https://peraichi.com/landing_pages/view/hoshi-suna-space-about-us">
+                    <font><b><i>About us</i><br>わたしたちについて</b></font>
+                </a></li>
+            <li class="category-title"><a href="https://peraichi.com/landing_pages/view/hoshi-suna-space-plan">
+                    <font><b><i>Plan</i><br>プラン</b></font>
+                </a></li>
+            <li class="category-title"><a href="https://peraichi.com/landing_pages/view/hoshi-suna-space-access">
+                    <font><b><i>Access</i><br>アクセス</b></font>
+                </a></li>
+            <li class="category-title-contact"><a href="https://forms.gle/WHcM1BjGQxP5WMAT9">
+                    <font><b><i>Contact</i><br>お問い合わせ</b></font>
+                </a></li>
+        </ul>
+        <div class="nav-sns">
+            <div><a href="https://www.instagram.com/hoshi.suna.space/" class="flowbtn10"><i class="fab fa-instagram" style="color: #FFFFFF;"></i></a></div>
+            <div><a href="https://twitter.com/hoshinosuna1" class="flowbtn10"><i class="fab fa-twitter" style="color: #FFFFFF;"></i></a></div>
+            <div><a href="https://www.facebook.com/%E6%98%9F%E3%81%AE%E7%A0%82Tokyo-100757671487427/" class="flowbtn10"><i class="fab fa-facebook" style="color: #FFFFFF;"></i></a></div>
+        </div>
     </div>
-  </div>
-</ul>
+</div>
 <!-- メインコンテンツとの重複回避 -->
 <div class="margin-header-area"></div>
 <!--中身ここまで-->
