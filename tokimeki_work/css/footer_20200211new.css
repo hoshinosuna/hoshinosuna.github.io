@@ -89,14 +89,14 @@ nav ul {
   border-radius: 25px;
   text-decoration: none;
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   background-image: linear-gradient(#59A4B6 0%, #0F7198 100%);
   transition: .4s;
 }
 
 .pc.navi-link-contact-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .pc.nav-link-contact:hover {
@@ -364,21 +364,26 @@ nav ul {
 /* ulタグの内側余白を０にする */
 ul.snsbtniti {
   padding: 0 !important;
-  /*list-style-type: none !important;*/
-  list-style-type: none;
+  list-style-type: none !important;
 }
 
 /* アイコン全体の位置 */
 .snsbtniti {
+  list-style-type: none;
+  display: -ms-flexbox;
   display: flex;
+  margin-top: 24px;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
 /* アイコン同士の余白 */
-.snsbtniti li {
+ul.snsbtniti li {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
   flex: 0 0 33%;
   text-align: center !important;
-  display: inline;
 }
 </style>
