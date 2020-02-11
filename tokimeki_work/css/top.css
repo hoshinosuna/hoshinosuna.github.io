@@ -64,7 +64,7 @@ h2 {
  /* PC layout */
  .headLine {
     // 見出し
-    width: 100%;
+    width: 1014px;
     height:100%;
     //background-color:blue;
     background-image: url("https://cdn.peraichi.com/userData/5d730384-2260-439b-9faa-6db10a00002b/img/5d9cb94e48164/original.jpg");
@@ -88,6 +88,7 @@ h2 {
  }
 
  .img-room {
+    display: block;
     width: 70%;
     margin: 0 auto;
  }
@@ -124,7 +125,7 @@ h2 {
 
  /*Googleカレンダー*/
  .pc.cal_wrapper {
-    max-width: 500px;
+    max-width: 1014px;
     /* 最大幅 */
     min-width: 300px;
     /* 最小幅 */
