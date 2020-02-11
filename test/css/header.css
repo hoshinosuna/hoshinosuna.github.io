@@ -129,7 +129,7 @@
         left: 0;
         margin-top: 6rem;
         transition: .2s ease-in-out;
-        background-color: #087397;
+        background-color: rgba(08,115,151,0.9);
     }
 
     #nav-content.open {
@@ -142,7 +142,7 @@
         z-index: 9998;
         width: 100%;
         height: 100%;
-        background: #087397;
+        background: rgba(08,115,151,0.9);
         /*background-color: #087397;*/
         /*background: rgba(255, 255, 255, 0.9);*/
         /*背景色*/
@@ -198,9 +198,10 @@
 
     .category-title {
         padding: 0.5rem;
-        background-color: #087397;
+        background-color: rgba(08,115,151,0.0);
         border-bottom: 2px solid #FFFFFF;
         margin-top: 20px;
+        font-size: 1.5rem;
         /*background-color: #EDEDED;*/
         /*border-bottom: 2px solid #FFFFFF;*/
     }
@@ -218,6 +219,7 @@
         margin-bottom: 3rem;
         width: 80%;
         position: center;
+        font-size: 1.5rem;
     }
 
     .category-title-contact font {
