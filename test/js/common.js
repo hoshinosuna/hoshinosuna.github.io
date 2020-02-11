@@ -1,7 +1,7 @@
 $(function(){
-  $("#footer").load("https://hoshinosuna.github.io/html/footer.html");
+  $("#footer").load("https://hoshinosuna.github.io/test/html/footer.html");
 });
 
 $(function(){
-  $("#header").load("https://hoshinosuna.github.io/html/header.html");
+  $("#header").load("https://hoshinosuna.github.io/test/html/header.html");
 });
