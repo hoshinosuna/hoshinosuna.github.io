@@ -299,7 +299,7 @@ nav ul {
   }
 }
 
-/* ƒ{ƒ^ƒ“‘S‘Ì */
+/* ãƒœã‚¿ãƒ³å…¨ä½“ */
 .flowbtn10 {
   display: inline-block;
   font-size: 35px;
@@ -308,7 +308,7 @@ nav ul {
   color: #444;
 }
 
-/* ƒCƒ“ƒXƒ^EpocketEƒ‰ƒCƒ“‚¾‚¯­‚µ‘å‚«‚­ */
+/* ã‚¤ãƒ³ã‚¹ã‚¿ãƒ»pocketãƒ»ãƒ©ã‚¤ãƒ³ã ã‘å°‘ã—å¤§ãã */
 .flowbtn10 .fa-instagram,
 .flowbtn10 .fa-get-pocket,
 .flowbtn10 .fa-get-pocket,
@@ -316,67 +316,69 @@ nav ul {
   font-size: 38px;
 }
 
-/* Twitterƒ}ƒEƒXƒzƒo[ */
+/* Twitterãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-twitter:hover {
   color: #55acee;
 }
 
-/* Instagramƒ}ƒEƒXƒzƒo[ */
+/* Instagramãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-instagram:hover {
   color: #c6529a;
 }
 
-/* Facebookƒ}ƒEƒXƒzƒo[ */
+/* Facebookãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-facebook-f:hover {
   color: #3b5998;
 }
 
-/* Feedlyƒ}ƒEƒXƒzƒo[ */
+/* Feedlyãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-rss:hover {
   color: #6cc655;
 }
 
-/* Pocketƒ}ƒEƒXƒzƒo[ */
+/* Pocketãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-get-pocket:hover {
   color: #ef3f56;
 }
 
-/* ‚Í‚Äƒuƒ}ƒEƒXƒzƒo[ */
+/* ã¯ã¦ãƒ–ãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-bold:hover {
   color: #1ba5dc;
 }
 
-/* YouTubeƒ}ƒEƒXƒzƒo[ */
+/* YouTubeãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-youtube:hover {
   color: #fc0d1c;
 }
 
-/* LINEƒ}ƒEƒXƒzƒo[ */
+/* LINEãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-line:hover {
   color: #00c300;
 }
 
-/* ƒ[ƒ‹ƒAƒCƒRƒ“ƒ}ƒEƒXƒzƒo[ */
+/* ãƒ¡ãƒ¼ãƒ«ã‚¢ã‚¤ã‚³ãƒ³ãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼æ™‚ */
 .flowbtn10 .fa-envelope:hover {
   color: #f3981d;
 }
 
-/* ulƒ^ƒO‚Ì“à‘¤—]”’‚ğ‚O‚É‚·‚é */
+/* ulã‚¿ã‚°ã®å†…å´ä½™ç™½ã‚’ï¼ã«ã™ã‚‹ */
 ul.snsbtniti {
   padding: 0 !important;
-  list-style-type: none !important;
+  /*list-style-type: none !important;*/
+  list-style-type: none;
 }
 
-/* ƒAƒCƒRƒ“‘S‘Ì‚ÌˆÊ’u */
+/* ã‚¢ã‚¤ã‚³ãƒ³å…¨ä½“ã®ä½ç½® */
 .snsbtniti {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-/* ƒAƒCƒRƒ““¯m‚Ì—]”’ */
+/* ã‚¢ã‚¤ã‚³ãƒ³åŒå£«ã®ä½™ç™½ */
 .snsbtniti li {
   flex: 0 0 33%;
   text-align: center !important;
+  display: inline;
 }
 </style>
