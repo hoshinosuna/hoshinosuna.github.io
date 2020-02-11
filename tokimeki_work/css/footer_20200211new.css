@@ -80,10 +80,8 @@ nav ul {
 }
 
 .pc.nav-link-contact {
-  letter-spacing: .065em;
+  /*letter-spacing: .065em;
   display: inline-block;
-  /*width: 80%;*/
-  /*padding: 7px 20px;*/
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 25px;
@@ -92,7 +90,16 @@ nav ul {
   font-size: 2rem;
   font-weight: bold;
   background-image: linear-gradient(#59A4B6 0%, #0F7198 100%);
-  transition: .4s;
+  transition: .4s;*/
+display: inline-block;
+z-index: 1000;
+position: relative;
+background-color: #008ef0;
+border-radius: 23px;
+position: relative;
+padding: 6px 21px 7px;
+margin-right: 18px;
+margin-top: -5px;
 }
 
 .pc.navi-link-contact-text {
