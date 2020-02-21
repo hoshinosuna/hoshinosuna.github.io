@@ -1,0 +1,242 @@
+<style type="text/css">
+html {
+    font-size: 10px;
+}
+h2 {
+  font-size: 4rem;
+}
+
+.h-content-area {
+    // 見出しコンテンツ
+    display: block;
+    width: 100%;
+    height: 250px;
+    padding-top: 3%;
+    color: #e8e8e8;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #007296;
+}
+
+.h-sub-title {
+    font-size: 1.8rem;
+}
+
+.btn-gradient-radius {
+    display: inline-block;
+    width: 80%;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(#59A4B6 0%, #0F7198 100%);
+    transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+    background-image: linear-gradient(#59A4B6 0%, #0F7198 70%);
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* 画面幅が600px以上の場合の縦横比の指定 */
+    .googlecal {
+        padding-bottom: 75%;
+    }
+}
+
+.wk-weektop {
+    font-size: 10px !important;
+}
+
+.calendar-container {
+    font-size: 10px !important;
+}
+
+.btn-inquiry {
+    font-size:
+}
+
+
+@media screen and (min-width: 768px)
+{
+ /* PC layout */
+ .headLine {
+    // 見出し
+    width: 1014px;
+    height:100%;
+    //background-color:blue;
+    background-image: url("https://cdn.peraichi.com/userData/5d730384-2260-439b-9faa-6db10a00002b/img/5d9cb94e48164/original.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 0px;
+    margin: 0 auto;
+ }
+ .pc { display: block !important; }
+ .pc.h-content-area.text-center {
+    // 見出しコンテンツ
+    display: block;
+    width: 100%;
+    height: 250px;
+    padding-top: 3%;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #007296;
+    margin-bottom: -20px;
+ }
+
+ .img-room {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+ }
+
+ .sp { display: none !important; }
+ .sp.h-content-area.text-center {
+    // 見出しコンテンツ
+    display: none;
+ }
+ 
+  .pc.m-content-area.text-center {
+    // 見出しコンテンツ
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    height: 250px;
+    padding-top: 3%;
+    color: #000000;
+    font-size: 20px;
+    //font-weight: bold;
+    //text-shadow: 1px 1px 2px #007296;
+    margin-bottom: -20px;
+ }
+ 
+ /*ボタン*/
+ .pc.btn-area {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+    position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+ /*Googleカレンダー*/
+ .pc.cal_wrapper {
+    max-width: 1014px;
+    /* 最大幅 */
+    min-width: 300px;
+    /* 最小幅 */
+    margin: 2.0833% auto;
+ }
+
+ .pc.googlecal {
+    position: relative;
+    padding-bottom: 100%;
+    /* 縦横比 */
+    height: 0;
+    overflow: hidden;
+ }
+
+ .pc.googlecal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+ }
+
+ .pc.access-info {
+    width: 50%;
+    padding: 0.5em 1em;
+    margin: 2em 2.5%;
+    margin: 0 auto;
+    border: double 5px #4ec4d3;
+ }
+
+ .pc.access-info p {
+    margin: 1em;
+    padding: 0;
+    font-size: 12px;
+ }
+}
+@media screen and (max-width: 767px)
+{
+ /* smart phone layout */
+ .headLine {
+    // 見出し
+    width: 100%;
+    background-color:blue;
+    background-image: url("https://cdn.peraichi.com/userData/5d730384-2260-439b-9faa-6db10a00002b/img/5d9cb94e48164/original.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+ }
+ .pc { display: none !important; }
+ .pc.h-content-area.text-center {
+    // 見出しコンテンツ
+    display: none;
+ }
+ 
+  .img-room {
+    width: 100%;
+ }
+ 
+ .sp { display: block !important; }
+ .sp.m-content-area.text-center {
+    // 見出しコンテンツ
+    display: block;
+ }
+
+ /*ボタン*/
+ .sp.btn-area {
+    display: inline-block;
+    width: 100%;
+    position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+ 
+  /*Googleカレンダー*/
+ .sp.cal_wrapper {
+    max-width: 960px;
+    /* 最大幅 */
+    min-width: 300px;
+    /* 最小幅 */
+    margin: 2.0833% auto;
+ }
+
+ .sp.googlecal {
+    position: relative;
+    padding-bottom: 100%;
+    /* 縦横比 */
+    height: 0;
+    overflow: hidden;
+ }
+
+ .sp.googlecal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+ }
+
+ .sp.access-info {
+
+    width: 95%;
+    padding: 0.5em 1em;
+    margin: 2em 2.5%;
+    margin: 0 auto;
+    border: double 5px #4ec4d3;
+ }
+
+ .sp.access-info p {
+    margin: 1em;
+    padding: 0;
+ }
+}
+</style>
