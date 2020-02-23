@@ -88,11 +88,11 @@ nav ul {
 }
 
 .navi-link-contact-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-link-contact:hover {
-    background-image: linear-gradient(#59A4B6 0%, #0F7198 70%);
+    background-image: linear-gradient(#008ef0 0%, #007Cf0 70%);
 }
 
 .goto-top {
