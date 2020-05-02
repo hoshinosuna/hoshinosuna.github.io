@@ -1,0 +1,218 @@
+/* --------------- 【PLAN】料金テーブル ---------------------*/
+#plan .notice {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.lsm {
+    letter-spacing: 0.1em;
+}
+
+#plan .spacer {
+    height: 20px;
+}
+
+#plan .plan-table {
+    width: 100%;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0px none;
+    margin-bottom: 0px;
+}
+
+#plan .plan-table .w170 {
+    width: 31.48148%;
+}
+
+#plan .plan-table tr {
+    border-bottom: #747474 1px dotted;
+}
+
+#plan .plan-table td,
+#plan .plan-table th {
+    border: 0px none;
+    padding: 3px 10px 3px 0;
+}
+
+/* SP 表示 */
+@media screen and (max-width: 768px) {
+    #plan .plan-table {
+        text-align: left;
+    }
+
+    #plan .plan-table thead {
+        display: none;
+    }
+
+    #plan .plan-table * {
+        display: block;
+    }
+
+    #plan .plan-table td,
+    #plan .plan-table th {
+        padding: 3px;
+    }
+}
+
+/* --------------- 【PLAN】FLOW ---------------------*/
+#plan h2 {
+    text-align: center;
+    font-weight: 400;
+    color: #27d4dc;
+}
+
+#plan h3 {
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+}
+
+#plan h3::before {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    background: -webkit-linear-gradient(-45deg, transparent, #ccc 10%, #ccc 90%, transparent);
+    background: linear-gradient(-45deg, transparent, #ccc 10%, #ccc 90%, transparent);
+}
+
+#plan h3 span {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 4em;
+    padding: 0 1em;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* --------------- 【FLOW】accordion menu ---------------------*/
+.flow-content {
+    text-align: center;
+}
+
+.flow-content .inner {
+    display: inline-block;
+}
+
+/* reset */
+.flow-content button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+.flow-content button label {
+    content: '▼';
+}
+
+/* --- debug start --- */
+.flow-toggle-chkbox {
+    display: none;
+}
+
+.btn-flat-border {
+    background: #67c5ff;
+    color: white;
+}
+
+#flow-toggle-chkbox:checked~.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+/* ----debug end ----*/
+.flow-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flow-content li, p {
+    margin: 0;
+}
+
+/* reset */
+.flow-content button {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(105, 105, 105, .2);
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+}
+
+.flow-content ul>li {
+    /* background-color: paleturquoise; */
+    text-align: center;
+    width: 300px;
+    /* 閉じている状態 */
+    height: 0px;
+    border-top: 0 white solid;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* 閉じるアニメーション */
+    transition:
+        height .3s ease-out,
+        border-top .3s ease-out,
+        padding-top .3s ease-out,
+        padding-bottom .3s ease-out;
+}
+
+.flow-content ul.is-open>li {
+    /* 開いている状態 */
+    height: auto;
+    border-top: 1px white solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    /* 開くアニメーション */
+    transition:
+        height .3s ease-out,
+        border-top .3s ease-out,
+        padding-top .3s ease-out,
+        padding-bottom .3s ease-out;
+}
+
+.flow-content ul>li>h3,
+.flow-content ul>li>p {
+    /* 閉じている状態 */
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    /* 閉じるアニメーション */
+    transition:
+        line-height .3s ease-out,
+        opacity .1s linear,
+        visibility .1s linear;
+}
+
+.flow-content ul.is-open>li>h3,
+.flow-content ul.is-open>li>p {
+    /* 開いている状態 */
+    line-height: 1.5;
+    opacity: 1;
+    visibility: visible;
+    /* 開くアニメーション */
+    transition:
+        line-height .3s ease-out,
+        opacity .1s linear .1s,
+        visibility .1s linear .1s;
+}

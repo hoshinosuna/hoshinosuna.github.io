@@ -1,86 +1,67 @@
-@media screen and (min-width: 768px)
-#main-contents .sec {
-    margin-top: -80px;
-    padding-top: 80px;
-}
-
-@media screen and (min-width: 768px)
-.title01 {
-    margin-bottom: 40px;
-    font-size: 50px !important;
-    font-size: 5rem !important;
-}
-
 #userguide .container {
-  width: 95vw;
+    width: 95vw;
 }
 
-
-.title01 {
-    /* font-family: garamond-premier-pro, serif; */
-    color: #003f67;
-    line-height: 1.16;
-    font-weight: 400;
-    text-align: center;
-
+#userguide .detail {
+    margin-bottom: 4rem;
 }
 
 #userguide .detail .item:not(.reverse) {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
-
 #userguide .detail .item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #userguide .detail .item:not(.reverse) figure {
-  margin-left: -75px;
+    margin-left: -75px;
 }
 
 #userguide .detail .item figure {
-  flex: 1;
-  width: 100%;
+    flex: 1;
+    width: 100%;
 }
 
 #userguide .detail .item figure {
-  height: 400px;
+    height: 400px;
 }
 
 figure {
-  overflow: hidden;
-  text-align: center;
+    overflow: hidden;
+    text-align: center;
 }
 
 img.ofi {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  object-position: 50%;
-  font-family: 'object-fit: cover;';
-  transition: all .3s ease;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: 50%;
+    font-family: 'object-fit: cover;';
+    transition: all .3s ease;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 #userguide .detail .item:not(.reverse) .text {
-  padding: 0 105px 0 20px;
+    padding: 0 105px 0 20px;
 }
 
 #userguide .detail .item .text {
-  display: flex;
-  align-items: center;
-  width: 50%;
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
 
 #userguide .detail .item .text, #userguide .detail .item figure {
-  height: 400px;
+    height: 400px;
 }
+
 #userguide .detail .item:not(.reverse) figure {
     margin-left: -75px;
 }
@@ -90,30 +71,30 @@ img {
 }
 
 #userguide .detail .item:not(:first-child) {
-  margin-top: 55px;
+    margin-top: 55px;
 }
 
 #userguide .detail .item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #userguide .detail .item.reverse figure {
-  margin-right: -75px;
+    margin-right: -75px;
 }
 
 #userguide .detail .item figure {
-  flex: 1;
-  width: 100%;
+    flex: 1;
+    width: 100%;
 }
 
 #userguide .detail .item .text, #userguide .detail .item figure {
-  height: 400px;
+    height: 400px;
 }
 
 figure {
-  overflow: hidden;
-  text-align: center;
+    overflow: hidden;
+    text-align: center;
 }
 
 #userguide .detail .item.reverse .text {
@@ -141,7 +122,7 @@ figure {
 #userguide .detail .item .text .inner h3 {
     margin-bottom: 32px;
     /* font-family: garamond-premier-pro, serif; */
-    color: #003f67;
+    color: #696969;
     font-size: 70px !important;
     font-size: 3.3rem !important;
     line-height: 1.2;
@@ -151,6 +132,10 @@ figure {
 #userguide .detail .item .text .inner h3 span {
     display: inline-block;
     width: 100%;
+}
+
+#userguide .detail .item .text .inner h3 span.left {
+    text-align: left;
 }
 
 #userguide .detail .item .text .inner h3 span.right {
@@ -169,13 +154,69 @@ figure {
     line-height: 1.6428571429;
 }
 
-#userguide .detail .item .text .inner p {
+#userguide .detail .item .text .inner p,
+#userguide p {
     font-size: 0.95rem;
 }
 
-
-
-
-.section-meta {
+/* .section-meta {
     background-color: #f1f5f8 !important;
+} */
+
+@media screen and (max-width: 767px) {
+    #userguide .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100vw;
+    }
+
+    #userguide .detail .item {
+        display: block;
+    }
+
+    #userguide .detail .item:not(.reverse) .text,
+    #userguide .detail .item.reverse .text {
+        position: relative;
+        margin-top: -1.25em;
+    }
+
+    #userguide .detail .item:not(.reverse) .text,
+    #userguide .detail .item:not(.reverse) figure,
+    #userguide .detail .item.reverse .text,
+    #userguide .detail .item.reverse figure {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 3.125%;
+    }
+
+    #userguide .detail .item:not(.reverse) .text .inner,
+    #userguide .detail .item.reverse .text .inner {
+        width: 100%;
+    }
+
+    #userguide .detail .item:not(.reverse) .text .inner h3,
+    #userguide .detail .item.reverse .text .inner h3 {
+        max-width: 260px;
+        margin-bottom: 25px;
+        padding: 10px 15px;
+        /* background-color: rgba(39, 212, 220, 0.8); */
+        background-color: rgba(150, 150, 150, 0.8);
+        color: #fff;
+        font-size: 20px !important;
+        font-size: 2rem !important;
+        text-align: left;
+    }
+
+    #userguide .detail .item:not(.reverse) figure,
+    #userguide .detail .item.reverse figure {
+        padding-left: 20px;
+    }
+
+    #userguide .detail .item:not(.reverse) .text,
+    #userguide .detail .item.reverse .text {
+        position: relative;
+        margin-top: -1.25em;
+    }
 }
