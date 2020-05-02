@@ -1,17 +1,8 @@
 /* --------------- 【PLAN】料金テーブル ---------------------*/
-.plan-table .w170 {
-    width: 31.48148%;
-}
-
-.plan-table td,
-.plan-table th {
-    border: 0px none;
-    padding: 3px 10px 3px 0;
-}
-
-.notice {
+#plan .notice {
     font-size: 10px;
     margin-top: 5px;
+    text-align: left;
 }
 
 .lsm {
@@ -22,21 +13,48 @@
     height: 20px;
 }
 
+#plan .plan-table {
+    width: 100%;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0px none;
+    margin-bottom: 0px;
+}
+
+#plan .plan-table .w170 {
+    width: 31.48148%;
+}
+
+#plan .plan-table tr {
+    border-bottom: #747474 1px dotted;
+}
+
+#plan .plan-table td,
+#plan .plan-table th {
+    border: 0px none;
+    padding: 3px 10px 3px 0;
+}
+
 /* SP 表示 */
 @media screen and (max-width: 768px) {
-    .plan-table thead {
+    #plan .plan-table {
+        text-align: left;
+    }
+
+    #plan .plan-table thead {
         display: none;
     }
 
-    .plan-table * {
-    display: block;
+    #plan .plan-table * {
+        display: block;
     }
 
-    .plan-table td,
-    .plan-table th {
-        padding: 0;
+    #plan .plan-table td,
+    #plan .plan-table th {
+        padding: 3px;
     }
-
 }
 
 /* --------------- 【PLAN】FLOW ---------------------*/
@@ -76,20 +94,6 @@
     text-align: left;
 }
 
-#plan .plan-table {
-    width: 100%;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0px none;
-    margin-bottom: 0px;
-}
-
-#plan .plan-table tr {
-    border-bottom: #747474 1px dotted;
-}
-
 /* --------------- 【FLOW】accordion menu ---------------------*/
 .flow-content {
     text-align: center;
@@ -113,6 +117,27 @@
     content: '▼';
 }
 
+/* --- debug start --- */
+.flow-toggle-chkbox {
+    display: none;
+}
+
+.btn-flat-border {
+    background: #67c5ff;
+    color: white;
+}
+
+#flow-toggle-chkbox:checked~.btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+/* ----debug end ----*/
 .flow-content ul {
     list-style-type: none;
     margin: 0;
@@ -132,6 +157,7 @@
     width: 300px;
     height: 50px;
     line-height: 50px;
+    font-size: 1rem;
 }
 
 .flow-content ul>li {
