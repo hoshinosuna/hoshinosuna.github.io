@@ -18,7 +18,7 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 <article id="post-<?php the_ID(); ?>" <?php post_class( array( 'list-article', 'clearfix' ) ); ?>>
 	<?php if ( $show_thumbnail ) { ?>
 	<div class="list-article-thumb">
-		<a href="<?php echo esc_url( get_permalink() ); ?>">
+		<a href="<?php echo esc_url( get_permalink() ); ?>" target="_blank" rel="noopener">
 			<?php
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail( 'onepress-blog-small' );
@@ -56,7 +56,7 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 		 */
 		if ( onepress_loop_get_prop( 'show_title', true ) ) { ?>
 		<header class="entry-header">
-			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark" target="_blank" rel="noopener">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 		<?php } ?>
 		<?php
