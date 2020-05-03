@@ -1,0 +1,31 @@
+#events .section-title-area .section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #696969;
+}
+
+@media screen and (min-width: 940px) {
+  #events .section-title-area .section-title {
+    font-size: 3.3rem;
+    letter-spacing: 3.5px;
+    color: #696969;
+  }
+}
+
+.btn-theme-primary-outline {
+  background-color: transparent;
+  background-image: none;
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #dcdcdc;
+}
+
+.btn-theme-primary-outline:hover {
+  background: #696969;
+  color: white;
+  border: 1px solid #dcdcdc;
+}
+
+.btn-theme-primary-outline:focus {
+  outline: 0;
+}
