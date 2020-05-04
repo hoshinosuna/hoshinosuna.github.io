@@ -29,3 +29,8 @@
 .btn-theme-primary-outline:focus {
   outline: 0;
 }
+
+.section-news .list-article:hover {
+  transform: scale(1.1);
+  transition-duration: 1.0s;
+}
