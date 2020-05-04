@@ -1,0 +1,45 @@
+dev
+│  ■header.php
+│  　"/wp-content/themes/onepress"にコピーする
+│  
+├─css
+│      ★CSS直下はまとめて"wp-content/themes/onepress/assets/css"にコピー
+│
+│      event.css
+│      import.css
+│      reserveFlow.css
+│      style.css
+│      userGuide.css
+│
+├─html
+│  │  ■reserveFlow.html
+│  │    ①
+│  │    　固定ページ「<!-- PLAN -->」に貼り付ける
+│  │    　○開発用ページ...
+│  │    　http://hoshinosuna.xsrv.jp/wp-admin/post.php?post=549&action=edit
+│  │    
+│  │    ②
+│  │    　セクション：サービスに固定ページ「<!-- PLAN -->」を追加する
+│  │  
+│  │  
+│  │  ■userGuide.html
+│  │    ①
+│  │    　セクション：わたしたちについて
+│  │    　　セクション説明
+│  │    　に貼り付ける
+│  │
+│  │
+│  └─20200425_改修前
+│          userGuide.html
+│
+├─js
+│      ★js直下はまとめて"wp-content/themes/onepress/assets/js"にコピー
+│      hoshisunaCommon.js
+│
+├─section-parts
+└─template-parts
+        ★"wp-content/themes/onepress/template-parts"にコピー
+        content-list.php
+
+
+
