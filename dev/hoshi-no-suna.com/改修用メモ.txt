@@ -15,6 +15,7 @@ dev
 │  │  ■reserveFlow.html
 │  │    ①
 │  │    　固定ページ「<!-- PLAN -->」に貼り付ける
+│  │    　※ページタイトルをコメントアウトすると、空のhタグが生成される
 │  │    　○開発用ページ...
 │  │    　http://hoshinosuna.xsrv.jp/wp-admin/post.php?post=549&action=edit
 │  │    

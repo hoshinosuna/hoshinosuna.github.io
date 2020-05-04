@@ -21,7 +21,8 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 		<a href="<?php echo esc_url( get_permalink() ); ?>" target="_blank" rel="noopener">
 			<?php
 			if ( has_post_thumbnail() ) {
-				the_post_thumbnail( 'onepress-blog-small' );
+				// the_post_thumbnail( 'onepress-blog-small' );
+				the_post_thumbnail( 'onepress-blog-square' );
 			} else {
 				echo '<img alt="" src="' . get_template_directory_uri() . '/assets/images/placholder2.png">';
 			}
