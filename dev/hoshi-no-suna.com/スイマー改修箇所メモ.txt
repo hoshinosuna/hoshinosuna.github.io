@@ -1,0 +1,140 @@
+#########################
+7.USER GUIDE
+ ⑦マウスオーバーしたら飛び出る画像
+#########################
+■style.cssに以下を追加（2661~2667行目）
+.ofi{
+	overflow: hidden;
+}
+.ofi:hover{
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+#########################
+10.ACCESS
+ ⑩アクセス：もっとカッコよく
+#########################
+■固定ページ→ACCESSを以下に変更
+<section id="access">
+<h2>ACCESS</h2>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-lg-6 offset-sm-3 offset-lg-3">
+<div class="access-info row">
+<div class="col-sm-6 col-lg-6">
+<p class="m-0 font-bold">所在地</p>
+<ul>
+<li>〒105-0003</li>
+<li>東京都港区西新橋3-24-6</li>
+<li>プロヴァンス美審館3F</li>
+</ul>
+</div>
+<div class="col-sm-6 col-lg-6">
+<p class="m-0 font-bold">最寄駅</p>
+<ul>
+<li>都営三田線　御成門駅　徒歩10秒</li>
+<li>都営大江戸線　大門駅　徒歩14分</li>
+<li>JR山手線　浜松町駅　徒歩14分</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<center><br><iframe style="border: 0; filter: grayscale(100%); -webkit-filter: grayscale(100%);" tabindex="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.632827525304!2d139.7490317146045!3d35.66141693866713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbfe0d4c42d%3A0x25b84d79e6ad38ac!2z44CSMTA1LTAwMDMg5p2x5Lqs6YO95riv5Yy66KW_5paw5qmL77yT5LiB55uu77yS77yU4oiS77yW!5e0!3m2!1sja!2sjp!4v1585156050302!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false"></iframe></center>
+</div>
+</section>
+■外観→カスタマイズ→追加CSSに以下を追加
+#access h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #696969;
+  font-size: 2.65rem;
+}
+■style.cssに以下を追加（3436~3475行目）
+/* Section: Access
+------------------------------*/
+#access h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #696969;
+  font-size: 2.65rem;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.access-content {
+  position: relative;
+  z-index: 0;
+  padding: 50px 0;
+}
+
+.access-info {
+  margin-left: 20%;
+}
+
+.access-info ul {
+  list-style: none;
+  margin-left: 0px;
+}
+.access-info ul li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .access-info {
+    text-align: center;
+}
+}
+
+#########################
+11.ACCESS
+ ⑪MAP：グレースタイルに
+#########################
+■固定ページ→ACCESSで以下変更
+<iframe style="border: 0;" tabindex="0" src="https://www.google.com/maps/ (略)
+↓
+<iframe style="border: 0; filter: grayscale(100%); -webkit-filter: grayscale(100%);" tabindex="0" src="https://www.google.com/maps/ (略)
+
+#########################
+12.フッター／レスポンシブ
+ SNSのカスタマイズ（アイコン：ぎょうざ）
+#########################
+■外観→ウィジェット→Footer1→カスタムHTMLに以下を追加
+<ul class="snsbtniti">
+	<li><a href="https://twitter.com/hoshinosuna1" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+	<li><a href="#" class="flowbtn10"><img src="http://hoshinosuna.xsrv.jp/wp-content/uploads/2020/03/image3-e1585369143219.png" width="75px" height="75" alt=""/></a></li>
+	<li><a href="https://www.instagram.com/hoshi.suna.space/" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
+</ul>
+■外観→カスタマイズ→追加CSSに以下を追加
+.site-footer{
+	color:#696969 !important;
+}
+.snsbtniti{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  width: 50%;  ★このブロック{}はこの2行だけ追加
+  margin: auto;  ★このブロック{}はこの2行だけ追加
+}
+
+#########################
+16.お問い合わせ
+　青外枠を消す
+#########################
+■style.cssから以下を削除（3080~3090行目あたりにあった）
+#contact .container {
+
+    border: 5px double rgb(204, 244, 244);
+
+    padding: 10px 10px;
+
+    border-radius: 20px;
+
+}
