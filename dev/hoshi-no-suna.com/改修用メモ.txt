@@ -1,14 +1,18 @@
 dev
 │  ■header.php
+│  ■page-faq.php
+│  ■page.php
+│  ■functions.php
 │  　"/wp-content/themes/onepress"にコピーする
 │  
 ├─css
 │      ★CSS直下はまとめて"wp-content/themes/onepress/assets/css"にコピー
 │
+│      calendar.css
 │      event.css
+│      FAQ.css
 │      import.css
 │      reserveFlow.css
-│      style.css
 │      userGuide.css
 │
 ├─html
@@ -29,6 +33,13 @@ dev
 │  │    　　セクション説明
 │  │    　に貼り付ける
 │  │
+│  │
+│  │  ■calendar.html
+│  │    ①
+│  │　　　固定ページ「<!-- CALENDAR -->」に貼り付ける
+│  │
+│  │    ②
+│  │    　セクション：サービスに固定ページ「<!-- CALENDAR -->」を追加する
 │  │
 │  └─20200425_改修前
 │          userGuide.html
