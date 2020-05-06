@@ -5029,3 +5029,258 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .googlecal {
     border-radius: 5px;
 }
+
+
+/* 追加CSS */
+body {
+font-family: "sawarabi-mincho-medium";
+}
+
+.site-branding .site-logo-div {
+  line-height: 75px;
+}
+
+.site-branding {
+  margin-left:5%;
+}
+
+.onepress-menu{
+	padding-right:5%;
+}
+
+ul.online {
+display:-webkit-flex;
+display:flex;
+width:100%;
+height:100%;
+list-style:none;
+margin:0; padding:0;
+}
+
+ul.online li{
+border: 1px solid #000000;
+width:100%;
+height:100%;
+display:block;
+margin:2px; padding:10px;
+background-color:#FFFFFF; color:#000000;
+text-align:left;
+text-decoration:none;
+border-radius: 10px;/*角の丸み*/
+}
+
+ul.online1 {
+display:-webkit-flex;
+display:flex;
+width:100%;
+height:100%;
+list-style:none;
+margin:0; padding:0;
+}
+
+ul.online1 li{
+border: 1px solid #000000;
+width:100%;
+height:100%;
+display:block;
+margin:2px; padding:10px;
+background-color:#FFFFFF; color:#000000;
+text-align:center;
+text-decoration:none;
+border-radius: 10px;/*角の丸み*/
+}
+
+ul.online2 {
+display:-webkit-flex;
+display:flex;
+width:100%;
+list-style:none;
+margin:0; padding:0;
+}
+
+ul.online2 li{
+border: 1px solid #b0c4de;
+width:100%;
+display:block;
+margin:10px; padding:10px;
+background-color:#b0c4de; color:#000000;
+text-align:center;
+text-decoration:none;
+border-radius: 40px;/*角の丸み*/
+}
+
+ul.online3 {
+display:-webkit-flex;
+display:flex;
+list-style: none;
+width:100%;
+margin:0; padding:0;
+}
+
+ul.online3 li{
+border: 1px solid #000000;
+width:100%;
+margin:0px; padding:10px;
+background-color:#FFFFFF; color:#000000;
+text-align:center;
+text-decoration:none;
+border-radius: 0px;/*角の丸み*/
+}
+
+
+	.cal_wrapper {
+	  max-width: 960px; /* 最大幅 */
+	  min-width: 300px; /* 最小幅 */
+	  margin: 2.0833% auto;
+	}
+
+	.googlecal {
+	  position: relative;
+	  padding-bottom: 100%; /* 縦横比 */
+	  height: 0;
+	  overflow: hidden;
+	}
+	.googlecal iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100% !important;
+	  height: 100% !important;
+	}
+
+	@media only screen and (min-width: 600px) {
+	  /* 画面幅が600px以上の場合の縦横比の指定 */
+	  .googlecal {
+	    padding-bottom: 75%;
+	  }
+	}
+
+	.wk-weektop {
+		font-size: 10px !important;
+	}
+
+	.calendar-container {
+		font-size: 10px !important;
+	}
+
+.site-footer{
+	color:#696969 !important;
+}
+/* ボタン全体 */
+.flowbtn10{
+  display:inline-block;
+  font-size:35px;
+  text-decoration:none;
+  transition:.5s;
+	color:#696969;
+}
+/* インスタ・pocket・ラインだけ少し大きく */
+.flowbtn10 .fa-instagram,.flowbtn10 .fa-get-pocket,.flowbtn10 .fa-get-pocket,.flowbtn10 .fa-line{
+  font-size:38px;
+}
+/* Twitterマウスホバー時 */
+.flowbtn10 .fa-twitter:hover{
+  color:#55acee;
+}
+/* Instagramマウスホバー時 */
+.flowbtn10 .fa-instagram:hover{
+  color:#c6529a;
+}
+/* Facebookマウスホバー時 */
+.flowbtn10 .fa-facebook-f:hover{
+  color:#3b5998;
+}
+/* Feedlyマウスホバー時 */
+.flowbtn10 .fa-rss:hover{
+  color:#6cc655;
+}
+/* Pocketマウスホバー時 */
+.flowbtn10 .fa-get-pocket:hover{
+  color:#ef3f56;
+}
+/* はてブマウスホバー時 */
+.flowbtn10 .fa-bold:hover{
+  color:#1ba5dc;
+}
+/* YouTubeマウスホバー時 */
+.flowbtn10 .fa-youtube:hover{
+  color:#fc0d1c;
+}
+/* LINEマウスホバー時 */
+.flowbtn10 .fa-line:hover{
+  color:#00c300;
+}
+/* メールアイコンマウスホバー時 */
+.flowbtn10 .fa-envelope:hover{
+  color:#f3981d;
+}
+/* ulタグの内側余白を０にする */
+  ul.snsbtniti{
+  padding:0!important;
+  list-style-type:none!important;
+}
+/* アイコン全体の位置 */
+.snsbtniti{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;	width: 50%;
+	margin: auto;
+}
+/* アイコン同士の余白 */
+.snsbtniti li{
+  flex:0 0 33%;
+  text-align:center!important;
+}
+
+.section-meta {
+	background-color:#f1f5f8;
+}
+
+#onepress-service.section-meta {background-color:#ffffff;}
+
+/* パソコンで見たときは"pc"のclassがついたテーブルが表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+.pc.adress { display: block !important; }
+.sp.adress { display: none !important; }
+.pc.about { display: block !important; }
+.sp.about { display: none !important; }
+.pc.userguide { display: block !important; }
+.sp.userguide { display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついたテーブルが表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+
+.pc.adress { display: none !important; }
+.sp.adress { display: block !important; }
+.pc.about { display: none !important; }
+.sp.about { display: block !important; }
+.pc.userguide { display: none !important; }
+.sp.userguide { display: block !important; }
+
+}
+
+.pc.adress table{
+	width:"50%";
+}
+.sp.adress{
+}
+
+.pc.about{
+}
+.sp.about{
+}
+
+.pc.userguide{
+}
+.sp.userguide{
+}
+
+#access h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #696969;
+  font-size: 2.65rem;
+}
