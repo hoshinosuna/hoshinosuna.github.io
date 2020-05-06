@@ -20,6 +20,7 @@
     <?php wp_head(); ?>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/onepress/assets/css/import.css">
+    <script type="text/javascript" src="/wp-content/themes/onepress/assets/js/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="/wp-content/themes/onepress/assets/js/hoshisunaCommon.js"></script>
 </head>
 
