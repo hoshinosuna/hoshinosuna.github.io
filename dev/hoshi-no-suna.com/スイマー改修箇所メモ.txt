@@ -106,6 +106,10 @@
 12.フッター／レスポンシブ
  SNSのカスタマイズ（アイコン：ぎょうざ）
 #########################
+■ヘッダの追加
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+
 ■外観→ウィジェット→Footer1→カスタムHTMLに以下を追加
 <ul class="snsbtniti">
 	<li><a href="https://twitter.com/hoshinosuna1" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
