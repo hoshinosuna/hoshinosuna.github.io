@@ -123,7 +123,7 @@ if ( ! $label ) {
 if ( $link != '' && $label != '' ) {
 	?>
 						<div class="all-news">
-							<a class="btn btn-theme-primary-outline" href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $label ); ?></a>
+							<a class="btn btn-theme-primary-outline" href="<?php echo esc_url( $link ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $label ); ?></a>
 						</div>
 						<?php } ?>
 
