@@ -1,0 +1,191 @@
+
+<作業履歴>
+※バックアップをとってから作業する
+
+1.ヘッダー【タスク：写真の受け取り】
+①ロゴ：横文字バージョン 
+サイト基本情報＞ロゴの変更　で画像を logo_resize.png に変更
+ロゴの位置→追加CSSに以下追加☆
+
+.site-branding .site-logo-div {
+  line-height: 75px;
+	margin-left: -30px;
+}
+
+
+
+2.ヒーロー
+ TOP画像
+ セクション：ヒーロー＞
+　①写真のみ【完了】
+　ヒーローコンテンツレイアウト＞大きなテキスト
+　　＜改修前＞
+　　　イベントスペース星の砂 Tokyo
+　　＜改修後＞
+　　　（空）
+
+　②スライドショー
+　ヒーローの背景メディア＞項目
+　　背景画像を選択
+　　写真は026.jpg～030.jpgから2枚
+　　現在は028.jpgと030.jpg
+
+　ヒーロー設定＞スライダーのアニメーション速度
+　　3000に変更
+
+
+
+3.フォントの変更
+
+■フォントの追加
+追加 CSS＞
+
+＜変更前＞
+@font-face{
+font-family: "logo-type-gothic-condense";
+src: url("http://hoshinosuna.xsrv.jp/wp-includes/fonts/logo-type-gothic-condense.woff") format("woff"),
+url("http://hoshinosuna.xsrv.jp/wp-includes/fonts/logo-type-gothic-condense.eot") format("eot");
+}
+body {
+font-family: "logo-type-gothic-condense";
+}
+
+＜変更後＞
+@font-face{
+font-family: "sawarabi-mincho-medium";
+src: url("http://hoshinosuna.xsrv.jp/wp-includes/fonts/sawarabi-mincho-medium.woff") format("woff"),
+url("http://hoshinosuna.xsrv.jp/wp-includes/fonts/sawarabi-mincho-medium.eot") format("eot");
+}
+body {
+font-family: "sawarabi-mincho-medium";
+}
+
+
+スタイルシート は変更なし
+
+
+4.特集
+
+<変更前>
+<div class="pc about">
+
+<span style="font-size: 2.0rem; text-align: center;"><span style="font-size: 2.0rem; text-align: center;"><b>1人1人が個性を発揮する空間を</b></span></span>
+<table align="center">
+<tbody>
+<tr>
+<td><span style="font-size: 1.2rem; text-align: center;"><span style="font-size: 1.2rem; text-align: center;">
+わたしたちは、壁、絵画、装飾品などの内装を自分たちで手がけ、
+温もりを感じられる空間づくりにこだわりました。</span></span>願わくば、利用する皆さまが自由に表現する場でありたい。
+
+「イベントスペース 星の砂 Tokyo」は、
+「個性」と「自由に表現する」文化を提供します。</td>
+</tr>
+</tbody>
+</table>
+<img src="http://hoshinosuna.xsrv.jp/wp-content/uploads/2020/03/内装２.jpg" width="" height="" />
+<table align="center">
+<tbody>
+<tr>
+<td><span style="font-size: 1.2rem; text-align: center;">イベントスペース 星の砂 Tokyo」は、</span>
+<span style="font-size: 1.2rem; text-align: center;">東京都港区 御成門駅から徒歩10秒にある、</span>
+<span style="font-size: 1.2rem; text-align: center;">好立地な多目的イベントスペースです。</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sp about"><span style="font-size: 2.0rem; text-align: center;"><span style="font-size: 2.0rem; text-align: center;"><b>
+1人1人が
+個性を発揮する空間を</b></span></span>
+<table align="center">
+<tbody>
+<tr>
+<td><span style="font-size: 1.2rem; text-align: center;"><span style="font-size: 1.2rem; text-align: center;">
+わたしたちは、壁、絵画、装飾品などの内装を自分たちで手がけ、温もりを感じられる空間づくりにこだわりました。</span></span>願わくば、利用する皆さまが自由に表現する場でありたい。
+
+「イベントスペース 星の砂 Tokyo」は、
+「個性」と「自由に表現する」文化を提供します。</td>
+</tr>
+</tbody>
+</table>
+<img src="http://hoshinosuna.xsrv.jp/wp-content/uploads/2020/03/内装２.jpg" width="" height="" />
+<table align="center">
+<tbody>
+<tr>
+<td><span style="font-size: 1.2rem; text-align: center;">イベントスペース 星の砂 Tokyo」は、</span>
+<span style="font-size: 1.2rem; text-align: center;">東京都港区 御成門駅から徒歩10秒にある、好立地な多目的イベントスペースです。</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+＜変更後＞
+
+<div class="pc about">
+
+<span style="font-size: 2.0rem; text-align: center;">
+<b>1人1人が個性を発揮する空間を</b>
+</span>
+
+<span style="font-size: 1.3rem; text-align: center;">
+東京都港区 御成門駅から徒歩10秒
+好立地な多目的イベントスペース
+</span>
+
+<span style="font-size: 1.0rem; text-align: center;">
+わたしたちは、壁、絵画、装飾品などの内装を自分たちで手がけ、
+温もりを感じられる空間づくりにこだわりました。
+</span>
+
+<span style="font-size: 1.0rem; text-align: center;">
+願わくば、利用する皆さまが自由に表現する場でありたい。
+</span>
+
+<span style="font-size: 1.0rem; text-align: center;">
+「イベントスペース 星の砂 Tokyo」は
+「個性」と「自由に表現する文化」を提供します。</span>
+
+</div>
+<div class="sp about"><span style="font-size: 2.0rem; text-align: center;">
+<b>
+1人1人が
+個性を発揮する空間を</b>
+</span><span style="font-size: 1.3rem; text-align: center;">
+東京都港区 御成門駅から徒歩10秒
+好立地な多目的イベントスペース
+</span><span style="font-size: 1.0rem; text-align: center;">
+わたしたちは
+壁・絵画・装飾品などの内装を
+自分たちで手がけ、
+温もりを感じられる空間づくりに
+こだわりました。</span><span style="font-size: 1.0rem; text-align: center;">
+願わくば
+利用する皆さまが
+自由に表現する場でありたい。
+</span>
+
+<span style="font-size: 1.0rem; text-align: center;">
+「イベントスペース 星の砂 Tokyo」は
+「個性」と「自由に表現する文化」を
+提供します。</span>
+
+</div>
+
+
+
+
+5.style.css
+ ⑤背景色を変える（ぎょうざ）
+　→トキメキさん依頼済み
+
+
+6.USAGE／CONTACT 【完了】
+
+USAGE：特に変更点なし☆
+CONTACT：セクション：お問い合わせ＞セクションの設定＞セクションタイトル
+　CONTACT
+
+
+
+
+
