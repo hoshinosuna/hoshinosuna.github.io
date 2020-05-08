@@ -64,11 +64,42 @@ section#faq * {
   transition-duration: 0.5s;
 }
 
-#faq .faq-area .faq-box .answer {
-  display: none;
-  margin: 10px 0;
+#faq .faq-area .faq-box .faq-column:not(.open) .answer {
+  /* display: none; */
+  /* height: 0px; */
+  /* margin: 10px 0; */
   border-left: 4px solid #fff;
+  /* 閉じている状態 */
+  height: 0px;
+  border-top: 0 white solid;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* 閉じるアニメーション */
+  transition:
+    height .3s ease-out,
+    border-top .3s ease-out,
+    padding-top .3s ease-out,
+    padding-bottom .3s ease-out;
 }
+
+#faq .faq-area .faq-box .faq-column.open .answer {
+  /* display: block; */
+  /* height: auto; */
+  /* margin: 10px 0; */
+  border-left: 4px solid #fff;
+  /* 開いている状態 */
+  height: auto;
+  border-top: 1px white solid;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  /* 開くアニメーション */
+  transition:
+    height .3s ease-out,
+    border-top .3s ease-out,
+    padding-top .3s ease-out,
+    padding-bottom .3s ease-out;
+}
+
 
 #faq .faq-area .faq-box .answer a {
   display: inline-block;

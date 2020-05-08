@@ -16,3 +16,10 @@ $(function() {
     $(this).toggleClass('open');
   });
 });
+
+
+function toggleAnswer(num) {
+  // alert('#question' + num);
+  document.querySelector('#question' + num).classList.toggle('open');
+
+}
