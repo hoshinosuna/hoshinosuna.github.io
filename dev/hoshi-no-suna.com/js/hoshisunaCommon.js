@@ -10,16 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // FAQ
-$(function() {
-  $('.question').on('click', function() {
-    $(this).next('.answer').slideToggle();
-    $(this).toggleClass('open');
-  });
-});
+// $(function() {
+//   $('.question').on('click', function() {
+//     $(this).next('.answer').slideToggle();
+//     $(this).toggleClass('open');
+//   });
+// });
 
 
 function toggleAnswer(num) {
-  // alert('#question' + num);
   document.querySelector('#question' + num).classList.toggle('open');
-
 }
