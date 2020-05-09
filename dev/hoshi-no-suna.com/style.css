@@ -5284,3 +5284,10 @@ border-radius: 0px;/*角の丸み*/
   color: #696969;
   font-size: 2.65rem;
 }
+
+#about .section-title-area table,
+#about .section-title-area tbody,
+#about .section-title-area tr,
+#about .section-title-area td {
+    border: 0px none;
+}

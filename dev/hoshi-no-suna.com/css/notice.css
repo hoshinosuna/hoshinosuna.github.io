@@ -1,0 +1,99 @@
+.mod-notice {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(69, 69, 69, .9);
+    z-index: 9999;
+    overflow-y: auto;
+    -webkit-transform: translate3d(0, 0, 100px);
+    transform: translate3d(0, 0, 100px);
+}
+
+.mod-notice.close {
+    display: none;
+}
+
+.mod-notice .inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 150px 0 40px;
+    position: relative;
+}
+
+.mod-notice .heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.mod-notice .heading p {
+    font-size: 1.66rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    white-space: nowrap;
+    padding: 22px 5px;
+    display: inline-block;
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+}
+
+/* BRタグの改行ができないため、強引にHRで改行
+   OnePressの制約
+ */
+.mod-notice hr {
+    border: none;
+}
+
+.mod-notice .text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.64;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.mod-notice .logo {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mod-notice .close {
+    display: block;
+    width: 30px;
+    height: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px none;
+}
+
+.mod-notice .close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.mod-notice .close:before,
+.mod-notice .close:after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -.5px 0 0 -13px;
+}
+
+.mod-notice .close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
