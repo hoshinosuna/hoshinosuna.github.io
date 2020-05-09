@@ -761,6 +761,21 @@ Footer widgets
     display: none;
 }
 
+
+.site-info-list ul {
+  list-style: none;
+}
+
+.site-info-list ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.site-info-list ul li a {
+  text-decoration: none;
+}
+
 .common-border-double-box {
     border: 5px double rgb(204,244,244);
     padding: 10px 10px;
@@ -1283,10 +1298,12 @@ Footer widgets
 .page-header .entry-title,
 .page-header .page-title {
   margin-bottom: 0px;
-  font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: center;
+  color: #696969;
+  font-size: 2.65rem;
 }
 .page-header p {
   margin: 6px 0px 0px 0px;
@@ -5290,4 +5307,9 @@ border-radius: 0px;/*角の丸み*/
 #about .section-title-area tr,
 #about .section-title-area td {
     border: 0px none;
+}
+
+
+hr.fource-new-line {
+    border: none;
 }

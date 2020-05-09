@@ -645,8 +645,8 @@ if ( ! function_exists( 'onepress_custom_inline_style' ) ) {
 				.pirate-forms-submit-button, .pirate-forms-submit-button:hover, input[type="reset"], input[type="submit"], input[type="submit"], .pirate-forms-submit-button,
 				.contact-form div.wpforms-container-full .wpforms-form .wpforms-submit,
 				.contact-form div.wpforms-container-full .wpforms-form .wpforms-submit:hover,
-				.nav-links a:hover, .nav-links a.current, 
-				.nav-links .page-numbers:hover, 
+				.nav-links a:hover, .nav-links a.current,
+				.nav-links .page-numbers:hover,
 				.nav-links .page-numbers.current
 				{
 					background: #<?php echo $primary; ?>;
@@ -1510,6 +1510,15 @@ if ( ! function_exists( 'onepress_footer_site_info' ) ) {
 	 */
 	function onepress_footer_site_info() {
 		?>
+		<div class="site-info-list">
+			<ul>
+				<li><a href="https://hoshi-no-suna.com/contact/" target="_blank" rel="noopener">お問い合わせ</a></li>
+				<li><a href="https://hoshi-no-suna.com/privacy/">Privacy Policy</a></li>
+				<li><a href="https://hoshi-no-suna.com/legal/">特商取引法に基づく表示</a></li>
+				<li><a href="https://hoshi-no-suna.com/company/">運営会社</a></li>
+			</ul>
+
+		</div>
         <span class="copyright">Copyright 2020 イベントスペース 星の砂 Tokyo</span>
 		<?php
 	}
@@ -1546,7 +1555,7 @@ function onepress_breadcrumb( $post_id = null ) {
             <?php yoast_breadcrumb(); ?>
             </div>
         </div>
-        <?php            
+        <?php
     }
 }
 
