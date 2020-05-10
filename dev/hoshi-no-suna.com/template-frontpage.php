@@ -5,11 +5,17 @@
  * @package OnePress
  */
 
+$enable_notice = true;  // Notice有効化
+
 get_header(); ?>
 
 	<div id="content" class="site-content">
 		<main id="main" class="site-main" role="main">
             <?php
+            if ( $enable_notice ) {
+                section_notice();
+            }
+            
 
             do_action( 'onepress_frontpage_before_section_parts' );
 

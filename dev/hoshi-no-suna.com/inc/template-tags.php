@@ -1895,3 +1895,91 @@ function onepress_footer_connect() {
 	<?php endif;
 }
 add_action( 'onepress_before_site_info', 'onepress_footer_connect', 25 );
+
+
+function section_notice() {
+    ?>
+<div class="mod-notice" id="notice">
+    <div class="inner">
+        <div class="cont" id="notice-content">
+            <header class="heading">
+                <p>新型コロナウイルス<br>
+                    イベントスペース<br>
+                    臨時休業延長のお知らせ</p>
+            </header>
+            <p class="text">
+                「イベントスペース 星の砂 Tokyo」を<br class="sp" />いつもご愛顧賜り、<br />
+                誠にありがとうございます。<br />
+            </p>
+            <hr />
+            <p class="text">
+                「イベントスペース 星の砂 Tokyo」の<br class="sp" />スペース貸しの臨時休業について<br />
+                下記の通りご案内しておりましたが<br /><br class="sp" />
+                2020年5月4日(月)に発表された<br class="sp" />緊急事態宣言延長に伴い<br />
+                臨時休業を2020年5月31日(日)まで<br class="sp" />延長することにいたしました。<br />
+            </p>
+            <hr />
+            <p class="text">
+                お客様には大変ご不便を<br class="sp" />お掛けいたしますが<br />
+                ご理解・ご協力の程、<br class="sp" />よろしくお願い申し上げます。<br />
+            </p>
+            <hr />
+            <p class="text">
+                2020年6月1日(月)から<br class="sp" />再開を予定しておりますが<br />
+                今後の政府の要請や社会情勢により、<br />
+                変更を余儀なくされることも<br class="sp" />十分考えられます。<br />
+            </p>
+            <hr />
+            <p class="text">
+                随時、HPならびにSNS等で<br class="sp" />お知らせいたします。<br />
+            </p>
+            <hr />
+            <p class="text">
+                よろしくお願いいたします。<br />
+            </p>
+            <hr />
+            <p class="text">
+                ———————————————————<br /><br /><br />
+            </p>
+            <p class="text">
+                2020.4.1<br />
+            </p>
+            <hr>
+            <p class="text">
+                「イベントスペース 星の砂 Tokyo」を<br class="sp" />いつもご愛顧賜り、<br />
+                誠にありがとうございます。<br />
+            </p>
+            <hr>
+            <p class="text">
+                厚生労働省から発表された<br />
+                「新型コロナウイルス感染症対策の基本方針」に伴って<br />
+                感染拡大防止に向け、臨時休業いたします。<br />
+                ご迷惑をお掛けしますが何卒ご理解くださいますようお願い申し上げます。<br />
+            </p>
+            <hr>
+            <p class="text">
+                【期 間】<br />
+                2020年4月16日(木)
+                ～
+                2020年5月6日(水)<br />
+            </p>
+            <hr>
+            <p class="text">
+                イベントスペースの営業有無に関しては<br />
+                「<a href="https://hoshi-no-suna.com/#contact">お問い合わせフォーム</a>」より<br class="sp" />
+                お問い合わせください。<br />
+            </p>
+
+            <p class="logo"><img src="https://hoshi-no-suna.com/wp-content/uploads/2020/05/Frame-1.jpg" alt="VENT"></p>
+        </div>
+        <button class="close" id="close-notice">Close</button>
+        <div class="">
+            <form class="" action="" method="">
+                <input type="checkbox" id="hidden-menu-checkbox1" value="1" checked class="hide" />
+            </form>
+        </div>
+    </div>
+</div>
+               
+    <?php
+}
