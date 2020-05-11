@@ -69,10 +69,11 @@ do_action( 'onepress_page_before_content' );
 								} else {
 									// FAQ list
 								?>
-									<dt class="question">
+							<div id="question<?php echo $line[$csv_heads_key['No']]; ?>" class="faq-column">
+							<dt class="question" onclick="toggleAnswer('<?php echo $line[$csv_heads_key['No']]; ?>');">
 					          <span class="ttl"><?php echo 'Q' . $line[$csv_heads_key['No']]; ?></span>
 					          <span class="txt"><?php echo $line[$csv_heads_key['question']]; ?></span></dt>
-					        <dd class="answer"><?php echo $line[$csv_heads_key['answer']]; ?></dd>
+								<dd class="answer"><?php echo $line[$csv_heads_key['answer']]; ?></dd></div>
 									<?php
 								}
 								$i++;
