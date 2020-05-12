@@ -5313,3 +5313,124 @@ border-radius: 0px;/*角の丸み*/
 hr.fource-new-line {
     border: none;
 }
+
+
+/* table  */
+h1.entry-title {
+    font-size: 1.66rem !important;
+}
+
+section#legal * {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+table.site-info-table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    border: none;
+    /* font-size: 1rem; */
+}
+
+table.site-info-table th,
+table.site-info-table td {
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+}
+
+table.site-info-table th {
+    background: #696969;
+    vertical-align: middle;
+    text-align: left;
+    width: 33%;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+table.site-info-table th:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #696969;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+/* firefox */
+@-moz-document url-prefix() {
+    table.site-info-table th::after {
+        float: right;
+        padding: 0;
+        left: 30px;
+        top: 10px;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: relative;
+        pointer-events: none;
+        border: 10px solid transparent;
+        border-left: #696969 10px solid;
+        margin-top: -10px;
+    }
+}
+
+table.site-info-table td {
+    background: #f8f8f8;
+    width: auto;
+    padding-left: 20px;
+}
+
+table.site-info-table a {
+    display: inline-block;
+    padding: 0 5px;
+    border-bottom: 1px solid #1D2088;
+    color: #1D2088;
+}
+
+/* SP 表示 */
+@media only screen and (max-width: 750px) {
+    table.site-info-table * {
+        border: none;
+    }
+
+    table.site-info-table th,
+    table.site-info-table td {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: white;
+        color: #696969;
+
+    }
+
+    table.site-info-table th {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    table.site-info-table td {
+        font-size: 1.0rem;
+        padding-top: 0px;
+    }
+
+    table.site-info-table th:after {
+        border-left-color: white;
+    }
+
+    @-moz-document url-prefix() {
+        table.site-info-table th::after {
+            border-left: white 10px solid;
+        }
+    }
+}
