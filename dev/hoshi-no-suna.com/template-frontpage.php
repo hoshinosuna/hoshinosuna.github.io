@@ -5,7 +5,7 @@
  * @package OnePress
  */
 
-$enable_notice = true;  // Notice有効化
+$enable_notice = false;  // Notice有効化
 
 get_header(); ?>
 
@@ -15,7 +15,7 @@ get_header(); ?>
             if ( $enable_notice ) {
                 section_notice();
             }
-            
+
 
             do_action( 'onepress_frontpage_before_section_parts' );
 
