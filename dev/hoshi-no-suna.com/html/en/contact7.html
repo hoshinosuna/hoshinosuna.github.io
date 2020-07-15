@@ -1,0 +1,24 @@
+<div class="container">
+
+    <p class="contact-form-category">
+        <label>Category *</label>
+        [select* category class:category-name "" "Viewing" "Reservation" "Other"]
+    </p>
+
+    <p class="contact-form-text">
+        <label> Name *
+            [text* your-name class:first-line placeholder "Name（ex：hoshino sunako）"] </label>
+    </p>
+
+    <p class="contact-form-text">
+        <label> E-mail *
+            [email* mail-addr class:contact-form-mail-addr akismet:author_email placeholder "your-mail@hoshi-no-suna.com"]</label>
+    </p>
+
+    <label> Inquiry
+        [textarea* your-message placeholder "An answer to an inquiry may take several days.
+        We will use personal information you provide accordingly according to our Privacy Policy."] </label>
+
+    [submit "Submit"]
+
+</div>
