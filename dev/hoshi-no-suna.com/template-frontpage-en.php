@@ -74,7 +74,7 @@ get_header();
             $page = get_page( $id );
             echo $page -> post_content;
 
-			echo do_shortcode('[contact-form-7 id="960" title="Contact"]');
+			echo do_shortcode('[contact-form-7 id="646" title="CONTACT"]');
 
 
 //            do_action( 'onepress_frontpage_before_section_parts' );

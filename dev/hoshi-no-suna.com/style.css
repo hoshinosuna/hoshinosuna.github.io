@@ -2265,6 +2265,17 @@ section#contact:lang(en) {
     font-size: 2.65rem;
 }
 
+p.contact-header {
+    padding-bottom: 30px;
+    margin-top: -10px;
+    font-size:0.9rem;
+}
+
+p.contact-header a {
+    text-decoration: underline;
+    padding:0px 3px;
+}
+
 .section-title-area {
   margin-bottom: 60px;
   text-align: center;
@@ -5371,10 +5382,17 @@ border-radius: 0px;/*角の丸み*/
 li#menu-item-207:lang(en),
 li#menu-item-782:lang(en),
 li#menu-item-209:lang(en),
-li#menu-item-783:lang(en)
+li#menu-item-783:lang(en),
+li#menu-item-572:lang(en),
+li#menu-item-573:lang(en),
+li#menu-item-687:lang(en),
+li#menu-item-689:lang(ja),
+li#menu-item-690:lang(en)
 {
     display: none;
 }
+
+
 
 
 
@@ -5388,6 +5406,7 @@ li#menu-item-783:lang(en)
   text-align: center;
   padding: 0;
   font-weight: 400;
+  padding: 0px 10px;
 }
 
 #about .section-desc p:lang(en) {
