@@ -5,7 +5,7 @@
  * @package OnePress
  */
 
-$enable_notice = false;  // Notice有効化
+$enable_notice = true;  // Notice有効化
 
 get_header(); ?>
 
@@ -13,7 +13,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <?php
             if ( $enable_notice ) {
-                section_notice();
+                // section_notice();
+								section_notice_20200809_campaign();
             }
 
 
